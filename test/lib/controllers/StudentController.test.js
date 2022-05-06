@@ -17,4 +17,11 @@ describe("Unit Test for StudentController class", () => {
 
     });
 
+    test("Test 3.- Get student with credits highest to 500", () => {
+
+        const studentsWithMoreCredits = StudentController.getStudentsWithMoreCredits();
+        expect(studentsWithMoreCredits).not.toHaveLength(0);
+
+    });
+
 });
