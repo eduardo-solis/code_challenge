@@ -20,4 +20,12 @@ describe("Unit Test for StudentService class", () => {
 
     });
 
+    test("Test 3.- Get student with credits highest to 500", () => {
+
+        const data = Reader.readJsonFile("visualpartners.json");
+        const studentsWithMoreCredits = StudentService.getStudentsWithMoreCredits(data);
+        expect(studentsWithMoreCredits).not.toHaveLength(0);
+
+    });
+
 });
