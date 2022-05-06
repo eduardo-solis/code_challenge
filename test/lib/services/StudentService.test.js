@@ -11,5 +11,13 @@ describe("Unit Test for StudentService class", () => {
         expect(students).not.toHaveLength(0);
 
     });
-    
+
+    test("Test 2.- Get student's emails with certification", () => {
+
+        const data = Reader.readJsonFile("visualpartners.json");
+        const studentsemails = StudentService.getStudentsEmailsWithCertification(data);
+        expect(studentsemails).not.toHaveLength(0);
+
+    });
+
 });
