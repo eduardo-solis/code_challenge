@@ -10,4 +10,11 @@ describe("Unit Test for StudentController class", () => {
 
     });
 
+    test("Test 2.- Get student's emails with certification", () => {
+
+        const studentsEmailsWithCertification = StudentController.getStudentsEmailsWithCertification();
+        expect(studentsEmailsWithCertification).not.toHaveLength(0);
+
+    });
+
 });
