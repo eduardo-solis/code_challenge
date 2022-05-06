@@ -15,7 +15,7 @@ describe("Unit Test for StudentService class", () => {
     test("Test 2.- Get student's emails with certification", () => {
 
         const data = Reader.readJsonFile("visualpartners.json");
-        const studentsemails = StudentService.getStudentsEmailsWithCertification(data);
+        const studentsemails = StudentService.getStudentsEmailWithCertification(data);
         expect(studentsemails).not.toHaveLength(0);
 
     });
